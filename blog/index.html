@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1>Meu Blog</h1>
+        <nav>
+            <input type="text" id="search" placeholder="Buscar posts...">
+            <button id="searchBtn">Buscar</button>
+        </nav>
+    </header>
+
+    <section id="post-creator">
+        <h2>Criar novo post</h2>
+        <input type="text" id="title" placeholder="Título do Post">
+        <textarea id="content" placeholder="Conteúdo do Post"></textarea>
+        <select id="category">
+            <option value="Geral">Geral</option>
+            <option value="Tecnologia">Tecnologia</option>
+            <option value="Estilo de vida">Estilo de Vida</option>
+            <option value="Educação">Educação</option>
+            <option value="Esporte">Esporte</option>
+        </select>
+        <button id="createPostBtn">Criar post</button>
+    </section>
+
+    <section id="posts">
+        <h2>Posts recentes</h2>
+        <div id="posts-list"></div>
+    </section>
+
+    <section id="comments-section">
+        <h2>Comentários</h2>
+        <div id="comments-list"></div>
+        <textarea id="commentContent" placeholder="Escreva um comentário..."></textarea>
+        <button id="addCommentBtn">Comentar</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

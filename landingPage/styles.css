@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0e0d0d;
+    color: #ffffff;
+}
+
+header {
+    background-color: #24274b;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8155f8;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    color: #f0b90b;
+}
+
+.hero {
+    background-image: url('pexels-francesco-ungaro-998641.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #5a33c7;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: #ffbb00;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #cc7401;
+}
+
+.about,
+.attractions,
+.tickets,
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2,
+.attractions h2,
+.tickets h2,
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.attractions .attraction-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.attractions .attraction-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form label {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+footer {
+    background-color: #2c2c2c;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #aaa;
+}

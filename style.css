@@ -1,127 +1,387 @@
 body {
     font-family: Arial, sans-serif;
+    /* Define a fonte padrão */
     margin: 0;
+    /* Remove a margem padrão */
     padding: 0;
+    /* Remove o preenchimento padrão */
     background-color: #000000;
+    /* Fundo preto */
     color: #000000;
+    /* Texto preto */
 }
 
 header {
     background-color: #000000;
+    /* Fundo preto no cabeçalho */
     padding: 10px 0;
+    /* Preenchimento vertical */
 }
 
 nav ul {
     list-style-type: none;
+    /* Remove marcadores */
     margin: 0;
+    /* Remove margem */
     padding: 0;
+    /* Remove preenchimento */
     display: flex;
+    /* Alinha itens horizontalmente */
 }
 
 nav ul li {
     margin: 0 15px;
+    /* Espaço entre itens */
 }
 
 nav ul li a {
     color: #ffffff;
+    /* Cor do link branco */
     text-decoration: none;
+    /* Remove sublinhado */
 }
 
 nav ul li a:hover {
     color: rgb(0, 162, 255);
+    /* Cor do link ao passar o mouse */
 }
 
 h1 {
     color: rgb(0, 162, 255);
+    /* Cor do título principal */
     text-align: center;
+    /* Centraliza o título */
 }
-
 
 #formacao {
     text-align: left;
+    /* Alinha texto à esquerda */
 }
 
 h2 {
     color: #adadad;
+    /* Cor dos subtítulos */
 }
 
 p {
     text-align: center;
+    /* Centraliza parágrafos */
 }
 
 main {
     padding: 20px;
+    /* Preenchimento */
     max-width: 800px;
+    /* Largura máxima */
     margin: auto;
+    /* Centraliza */
     background-color: #000000;
+    /* Fundo preto */
     color: #ffffff;
+    /* Texto branco */
 }
 
 form {
     max-width: 600px;
+    /* Largura máxima do formulário */
     margin: 0 auto;
+    /* Centraliza o formulário */
     padding: 20px;
+    /* Preenchimento */
     background-color: #000000;
+    /* Fundo preto */
     border-radius: 10px;
+    /* Bordas arredondadas */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra */
 }
 
 #nome,
 #email,
 #mensagem {
     display: block;
+    /* Exibe em bloco */
     margin-bottom: 15px;
+    /* Espaço abaixo dos campos */
 }
 
 #nome,
 #email {
     width: 100%;
+    /* Largura total */
     padding: 10px;
+    /* Preenchimento */
     border: 1px solid #ccc;
+    /* Borda */
     border-radius: 8px;
+    /* Bordas arredondadas */
     box-sizing: border-box;
+    /* Inclui preenchimento na largura total */
 }
 
 #mensagem {
     width: 100%;
+    /* Largura total */
     padding: 10px;
+    /* Preenchimento */
     border: 1px solid #ccc;
+    /* Borda */
     border-radius: 8px;
+    /* Bordas arredondadas */
     box-sizing: border-box;
+    /* Inclui preenchimento na largura total */
     resize: vertical;
+    /* Redimensionamento vertical */
 }
 
 form input[type="submit"] {
     background-color: #007bff;
+    /* Cor de fundo do botão */
     color: #fff;
+    /* Cor do texto do botão */
     border: none;
+    /* Remove borda */
     padding: 12px 20px;
+    /* Preenchimento */
     font-size: 16px;
+    /* Tamanho da fonte */
     font-weight: bold;
+    /* Texto em negrito */
     border-radius: 12px;
+    /* Bordas arredondadas */
     cursor: pointer;
+    /* Cursor de mão */
     transition: background-color 0.3s, transform 0.2s;
+    /* Transição suave */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra */
     margin-top: 10px;
+    /* Espaço acima */
     margin-left: 43%;
+    /* Centraliza botão */
 }
 
 form input[type="submit"]:hover {
     background-color: #0056b3;
+    /* Cor ao passar o mouse */
     transform: scale(1.05);
+    /* Aumenta o botão */
 }
 
 form input[type="submit"]:active {
     background-color: #004494;
+    /* Cor ao clicar */
     transform: scale(1);
+    /* Retorna ao tamanho original */
 }
 
 footer {
     text-align: center;
+    /* Centraliza texto */
     padding: 10px 0;
+    /* Preenchimento vertical */
     background-color: #000000;
+    /* Fundo preto */
     color: #ffffff;
+    /* Texto branco */
     position: fixed;
+    /* Fixa o rodapé */
     width: 100%;
+    /* Largura total */
     bottom: 0;
+    /* Na parte inferior */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Define a fonte padrão */
+    margin: 0;
+    /* Remove a margem padrão */
+    padding: 0;
+    /* Remove o preenchimento padrão */
+    background-color: #000000;
+    /* Fundo preto */
+    color: #000000;
+    /* Texto preto */
+}
+
+header {
+    background-color: #000000;
+    /* Fundo preto no cabeçalho */
+    padding: 10px 0;
+    /* Preenchimento vertical */
+}
+
+nav ul {
+    list-style-type: none;
+    /* Remove marcadores */
+    margin: 0;
+    /* Remove margem */
+    padding: 0;
+    /* Remove preenchimento */
+    display: flex;
+    /* Alinha itens horizontalmente */
+}
+
+nav ul li {
+    margin: 0 15px;
+    /* Espaço entre itens */
+}
+
+nav ul li a {
+    color: #ffffff;
+    /* Cor do link branco */
+    text-decoration: none;
+    /* Remove sublinhado */
+}
+
+nav ul li a:hover {
+    color: rgb(0, 162, 255);
+    /* Cor do link ao passar o mouse */
+}
+
+h1 {
+    color: rgb(0, 162, 255);
+    /* Cor do título principal */
+    text-align: center;
+    /* Centraliza o título */
+}
+
+#formacao {
+    text-align: left;
+    /* Alinha texto à esquerda */
+}
+
+h2 {
+    color: #adadad;
+    /* Cor dos subtítulos */
+}
+
+p {
+    text-align: center;
+    /* Centraliza parágrafos */
+}
+
+main {
+    padding: 20px;
+    /* Preenchimento */
+    max-width: 800px;
+    /* Largura máxima */
+    margin: auto;
+    /* Centraliza */
+    background-color: #000000;
+    /* Fundo preto */
+    color: #ffffff;
+    /* Texto branco */
+}
+
+form {
+    max-width: 600px;
+    /* Largura máxima do formulário */
+    margin: 0 auto;
+    /* Centraliza o formulário */
+    padding: 20px;
+    /* Preenchimento */
+    background-color: #000000;
+    /* Fundo preto */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+}
+
+#nome,
+#email,
+#mensagem {
+    display: block;
+    /* Exibe em bloco */
+    margin-bottom: 15px;
+    /* Espaço abaixo dos campos */
+}
+
+#nome,
+#email {
+    width: 100%;
+    /* Largura total */
+    padding: 10px;
+    /* Preenchimento */
+    border: 1px solid #ccc;
+    /* Borda */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    box-sizing: border-box;
+    /* Inclui preenchimento na largura total */
+}
+
+#mensagem {
+    width: 100%;
+    /* Largura total */
+    padding: 10px;
+    /* Preenchimento */
+    border: 1px solid #ccc;
+    /* Borda */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    box-sizing: border-box;
+    /* Inclui preenchimento na largura total */
+    resize: vertical;
+    /* Redimensionamento vertical */
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    /* Cor de fundo do botão */
+    color: #fff;
+    /* Cor do texto do botão */
+    border: none;
+    /* Remove borda */
+    padding: 12px 20px;
+    /* Preenchimento */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Texto em negrito */
+    border-radius: 12px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Cursor de mão */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Transição suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    margin-top: 10px;
+    /* Espaço acima */
+    margin-left: 43%;
+    /* Centraliza botão */
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+    /* Cor ao passar o mouse */
+    transform: scale(1.05);
+    /* Aumenta o botão */
+}
+
+form input[type="submit"]:active {
+    background-color: #004494;
+    /* Cor ao clicar */
+    transform: scale(1);
+    /* Retorna ao tamanho original */
+}
+
+footer {
+    text-align: center;
+    /* Centraliza texto */
+    padding: 10px 0;
+    /* Preenchimento vertical */
+    background-color: #000000;
+    /* Fundo preto */
+    color: #ffffff;
+    /* Texto branco */
+    position: fixed;
+    /* Fixa o rodapé */
+    width: 100%;
+    /* Largura total */
+    bottom: 0;
+    /* Na parte inferior */
 }
